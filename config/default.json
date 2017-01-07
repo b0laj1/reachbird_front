@@ -1,0 +1,25 @@
+{
+
+  "application": {
+    "name": "Reachbird Recommender System Frontend",
+    "port": "12000",
+    "isDebug": true
+  },
+  "database": {
+    "host": "139.162.187.90",
+    "database": "reachbird",
+    "username": "reachbird",
+    "password": "1234tits",
+    "port": "27017"
+  },
+  "ip-api": {
+      "url": "http://ip-api.com/json/",
+      "key": ""
+  },
+  "image-analysis": [
+    {
+      "client_id":"w_anlai3QV7IEYRyhSHzFVzr1h3Ylm-kGnBGu-xZ",
+      "secret":"areoqBupvUUm8H69NF6KZHdR5fnYp1CyqPAuuELw"
+    }
+  ]
+}

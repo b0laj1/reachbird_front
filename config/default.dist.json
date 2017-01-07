@@ -1,0 +1,25 @@
+{
+
+  "application": {
+    "name": "Reachbird Frontend",
+    "port": "12000",
+    "isDebug": true
+  },
+  "database": {
+    "host": "localhost",
+    "database": "xxx",
+    "username": "yyy",
+    "password": "zzz",
+    "port": "27017"
+  },
+  "ip-api": {
+      "url": "http://ip-api.com/json/",
+      "key": ""
+  },
+  "image-analysis": [
+    {
+      "client_id":"xxxx",
+      "secret":"yyyy"
+    }
+  ]
+}

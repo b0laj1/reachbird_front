@@ -1,7 +1,44 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+    title= "Reachbird Recommender System"
+    link(rel='stylesheet', href='/bower_components/gentelella/vendors/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/bower_components/gentelella/vendors/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/bower_components/gentelella/vendors/nprogress/nprogress.css')
+    link(rel='stylesheet', href='/bower_components/gentelella/vendors/google-code-prettify/bin/prettify.min.css')
+    link(rel='stylesheet', href='/bower_components/gentelella/vendors/bootstrap-daterangepicker/daterangepicker.css')
+    link(rel='stylesheet', href='/bower_components/gentelella/build/css/custom.min.css')
+    link(rel='stylesheet', href='/bower_components/circliful/css/jquery.circliful.css')
+
+  body(class='nav-md')
+    - var classes = ['container', 'body']
+    div(class=classes)
+      div(class='main_container')
+        include includes/sidebar.html
+        include includes/topnav.html
+        include includes/mainpage.html
+        block content
+
+    script(src='/bower_components/gentelella/vendors/jquery/dist/jquery.min.js')
+    script(src='/bower_components/circliful/js/jquery.circliful.min.js')
+    script(src='/bower_components/gentelella/vendors/bootstrap/dist/js/bootstrap.min.js')
+    script(src='/bower_components/gentelella/vendors/fastclick/lib/fastclick.js')
+    script(src='/bower_components/gentelella/vendors/nprogress/nprogress.js')
+    script(src='/bower_components/gentelella/vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js')
+    script(src='/bower_components/gentelella/vendors/jquery.hotkeys/jquery.hotkeys.js')
+    script(src='/bower_components/gentelella/vendors/google-code-prettify/src/prettify.js')
+    script(src='/bower_components/gentelella/vendors/Chart.js/dist/Chart.min.js')
+    script(src='/bower_components/gentelella/vendors/jquery-sparkline/dist/jquery.sparkline.min.js')
+    script(src='/bower_components/gentelella/vendors/Flot/jquery.flot.js')
+    script(src='/bower_components/gentelella/vendors/Flot/jquery.flot.pie.js')
+    script(src='/bower_components/gentelella/vendors/Flot/jquery.flot.time.js')
+    script(src='/bower_components/gentelella/vendors/Flot/jquery.flot.stack.js')
+    script(src='/bower_components/gentelella/vendors/Flot/jquery.flot.resize.js')
+    script(src='/bower_components/gentelella/vendors/moment/min/moment.min.js')
+    script(src='/bower_components/gentelella/vendors/bootstrap-daterangepicker/daterangepicker.js')
+    script(src='/bower_components/gentelella/build/js/custom.min.js')
+    script(src='/javascripts/bootstrap.js')
+    script(src='/javascripts/flot.orderbars/js/jquery.flot.orderBars.js')
+    script(src='/javascripts/flot-spline/js/jquery.flot.spline.min.js')
+    script(src='/javascripts/flot.curvedlines/curvedLines.js')
+    script(src='/javascripts/DateJS/build/date.js')
